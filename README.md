@@ -41,20 +41,16 @@ Låt:
 
 Grannmatrisen \( $A$ \) definieras som:
 
-$$
-A_{ij} =
+$$A_{ij} =
 \begin{cases}
 1 & \text{om anteckning } i \text{ länkar till anteckning } j \\
 0 & \text{annars}
-\end{cases}
-$$
+\end{cases}$$
 
 Multipla kanter tillåts inte.
 ## PageRank
 PageRank beräknas med power iteration:
-$$
-p_{k+1} = \alpha P^T p_k + (1-\alpha)\frac{1}{n}\mathbf{1}
-$$
+$$p_{k+1} = \alpha P^T p_k + (1-\alpha)\frac{1}{n}\mathbf{1}$$
 Där:
 - \( $\alpha = 0.85$ \)
 - \( $P$ \) är övergångsmatrisen som bygger på utgående länkar
@@ -126,9 +122,7 @@ Visar:
 - Antal anteckningar per mapp
 - Antal interna länkar
 - Intern länkdensitet:
-$$
-\rho = \frac{E_{\text{internal}}}{n(n-1)}
-$$
+$$\rho = \frac{E_{\text{internal}}}{n(n-1)}$$
 - Utgående länkar mellan mappar
 - Inkommande länkar mellan mappar
 Visar även:
@@ -153,9 +147,7 @@ Välj din vault-mapp och tryck **Scan**.
 
 # Tolkning av mappdensitet
 Antag att en mapp innehåller \( n \) anteckningar. Maximalt antal möjliga riktade kanter:
-$$
-n(n-1)
-$$
+$$n(n-1)$$
 Densitet mäter hur internt sammankopplad mappen är:
 - 0.0 → helt okopplad  
 - 1.0 → fullständigt sammankopplad riktad graf  
